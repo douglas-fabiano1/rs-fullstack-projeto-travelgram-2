@@ -14,6 +14,8 @@
   --shape-transparency: #ffffff8f;
   --text-color-primary: #313131;
   --text-color-secondary: #6c6c6c;
+
+  --text: normal 1.6rem/1.5 var(--font-family); /*16px x 1.5 = 24px line height*/
   --heading1: bold 3.2rem/1.25 var(--font-family);
   --paragraph-md: normal 1.4rem/1.7 var(--font-family);
   --paragraph-sm: normal 1.2rem/1.7 var(--font-family);
@@ -22,5 +24,25 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color-secondary);
-  font: var(--paragraph-md);
+  font: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.container {
+  padding-inline: 3.2rem;
+  max-width: 128rem;
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
 }
