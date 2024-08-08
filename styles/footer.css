@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  gap: 2.4rem;
+  margin-block: 2.4rem;
+  font: var(--paragraph-md);
+  color: var(--text-color-secondary);
+}
+
+footer a:nth-child(1) {
+  margin-right: auto;
+}
